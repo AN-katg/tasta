@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    background-image: url(./picture/body1.gif);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* color: rgb(255, 255, 255); */
+}
+table{
+    position: absolute;
+    right: 0;
+    width: 380px;
+    height: 1200px;
+    text-align: center;
+    color: rgb(223, 174, 41);
+}
+.famous{
+    width: 350px;
+    height: 380px;
+}
+li{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+body{
+    width: 100%;
+    margin: 0 45px 0 0px;
+    /* position: absolute;
+    left: 20%;
+    right: 20%; */
+}
+header{
+    height: 520px;
+    width: 60%;
+    /* background-image: url(./picture/header4.gif); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 0 0 80px;
+}
+#div1{
+    text-align: center;
+}
+#header1{
+    height: 380px;
+    width: 100%;
+    margin: 0 auto;
+}
+main{
+    height:700px;
+    width: 60%;
+    margin: 0 0 0 80px;
+}
+
+.sec01{
+    height: 40%;
+    width: 100%;
+}
+.sec02{
+    height: 60%;
+    width: 100%;
+    
+}
+nav{
+    width: 55%;
+    float: left;
+}
+aside{
+    width: 45%;
+    float: left;
+}
+.box{
+    border: 1px solid ;
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    text-align: center;
+    /* line-height: 300px;    */
+}
+
+.boxs1{
+    position: relative;
+    left: 80px;
+    top: 50px;
+    margin: 10px 10px; 
+    width: 230px;
+    height: 230px;
+    transform-style: preserve-3d;
+    animation: anim1 4s infinite;
+}
+
+.boxs1:hover{
+    animation-play-state:paused;
+}
+@keyframes anim1{
+    100%{
+        transform: rotate3d(1,1,1,360deg);
+    }
+}
+
+img{
+    width: 230px;
+    height: 230px;
+}
+.show{
+    perspective: 1000pc;
+}
+.box:nth-of-type(1){
+    transform: translateZ(115px);
+}
+.box:nth-of-type(6){
+    transform: translateZ(-115px);
+}
+.box:nth-of-type(3){
+    transform: rotateX(90deg) translateZ(115px)
+}
+.box:nth-of-type(5){
+    transform: rotateX(90deg) translateZ(-115px)
+}
+.box:nth-of-type(2){
+    transform: rotateY(90deg) translateZ(115px)
+}
+.box:nth-of-type(4){
+    transform: rotateY(90deg) translateZ(-115px)
+}
+
+.lun_img{
+    height: 240px;
+    width: 100%;
+}
+footer{
+    height: 100px;
+    width: 60%;
+    margin: 0 0 0 80px;
+}
